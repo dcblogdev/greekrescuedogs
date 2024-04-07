@@ -32,15 +32,21 @@ class Show extends Component
         $this->next = DogModel::where('created_at', '>', $this->dog->created_at)->orderBy('created_at')->first();
 
         $keyFeatures = $this->dog->key_features;
-        $keyFeatures = Str::markdown($keyFeatures);
+        if ($keyFeatures !== null) {
+            $keyFeatures = Str::markdown($keyFeatures);
+        }
         $this->keyFeatures = Tags::get($keyFeatures);
 
         $description = $this->dog->description;
-        $description = Str::markdown($description);
+        if ($description !== null) {
+            $description = Str::markdown($description);
+        }
         $this->description = Tags::get($description);
 
         $content = $this->dog->content;
-        $content = Str::markdown($content);
+        if ($content !== null) {
+            $content = Str::markdown($content);
+        }
         $this->content = Tags::get($content);
 
         $this->tags = $this->dog->tags()->get()->pluck('name')->toArray();
