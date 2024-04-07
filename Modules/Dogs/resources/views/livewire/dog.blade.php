@@ -125,46 +125,6 @@
 
         </div>
 
-        <div class='flex flex-wrap mt-10 -mx-2'>
-
-            <div class="w-full p-2 md:w-1/2">
-
-                @if (isset($previous))
-                    <div class="bg-primary p-2 rounded h-15">
-                        <a href="{{ route('dogs.show', $previous) }}" class="text-white">
-                            <div>
-                                <div class="font-bold">
-                                    Previous Post
-                                </div>
-                                <div class="text-sm">
-                                    {{ $previous->title }}
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                @endif
-
-            </div>
-
-            <div class="w-full p-2 md:w-1/2">
-                @if (isset($next))
-                    <div class="bg-primary p-2 rounded h-15">
-                        <a href="{{ route('dogs.show', $next) }}" class="text-white">
-                            <div class="text-right">
-                                <div class="font-bold">
-                                    Next Post
-                                </div>
-                                <div class="text-sm">
-                                    {{ $next->title }}
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                @endif
-            </div>
-
-        </div>
-
     </div>
 
 </div>´

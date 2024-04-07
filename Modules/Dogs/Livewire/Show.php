@@ -11,25 +11,17 @@ class Show extends Component
 {
     public $dog;
 
-    public $previous;
-
-    public $next;
-
     public $keyFeatures;
+
     public $description;
+
     public $content;
-
-    public $toc;
-
-    public $latestPosts;
 
     public $tags;
 
     public function mount($slug): void
     {
         $this->dog = DogModel::where('slug', $slug)->firstOrFail();
-        $this->previous = DogModel::where('created_at', '<', $this->dog->created_at)->orderBy('created_at', 'desc')->first();
-        $this->next = DogModel::where('created_at', '>', $this->dog->created_at)->orderBy('created_at')->first();
 
         $keyFeatures = $this->dog->key_features;
         if ($keyFeatures !== null) {
