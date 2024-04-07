@@ -52,9 +52,9 @@
 
         <div class="overflow-hidden mb-10 px-8 py-4 rounded-lg">
 
-            <div class="grid grid-cols-2">
+            <div class="md:grid md:grid-cols-2">
 
-                <div>
+                <div class="mb-5">
                     @if(!empty($dog->image))
                         <div class="flex-shrink-0">
                             <a href="{{ route('dogs.show', $dog) }}" class="block">
@@ -65,7 +65,7 @@
                     @endif
                 </div>
 
-                <div class="px-5">
+                <div class="md:px-5">
 
                     <div class="bg-gray-100 rounded-lg p-5">
                         <h2 class="font-bold text-xl mb-5 text-black">{{ $dog->title }}</h2>
@@ -97,8 +97,6 @@
                                 @endif
                             </span></li>
                         </ul>
-
-
                     </div>
 
                 </div>
@@ -112,14 +110,12 @@
             </div>
 
             <div>
-                <h2>Key Features</h2>
-
                 {!! $keyFeatures !!}
             </div>
 
 
             <div class="prose lg:prose-xl">
-                <h2>Content</h2>
+                <h2>About {{ $dog->title }}</h2>
                 {!! $content !!}
             </div>
 
