@@ -10,6 +10,6 @@ class RouteServiceProvider extends ServiceProvider
     public function map(): void
     {
         Route::middleware('web')
-            ->group(module_path('Pages', '/Routes/web.php'));
+            ->group(base_path('Modules/Pages/Routes/web.php'));
     }
 }
