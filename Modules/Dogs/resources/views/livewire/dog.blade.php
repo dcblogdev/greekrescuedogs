@@ -114,7 +114,7 @@
             </div>
 
 
-            <div class="prose lg:prose-xl">
+            <div id="mainContent" class="prose lg:prose-xl">
                 <h2>About {{ $dog->title }}</h2>
                 {!! $content !!}
             </div>

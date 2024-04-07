@@ -6153,6 +6153,10 @@ img,svg {
 }
 
 img {
+  max-width: inherit;
+}
+
+#mainContent img {
   max-width: 100%;
 }
 
