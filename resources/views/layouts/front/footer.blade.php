@@ -8,6 +8,6 @@
       <path class="fill-none stroke-[#3f78e0] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-<script src="./assets/js/plugins.js"></script>
-<script src="./assets/js/theme.js"></script>
+<script src="{{ url('assets/js/plugins.js') }}"></script>
+<script src="{{ url('assets/js/theme.js') }}"></script>
 
