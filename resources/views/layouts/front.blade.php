@@ -19,7 +19,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ url('assets/css/plugins.css') }}">
     <link rel="stylesheet" href="{{ url('style.css') }}">
-    <script src="https://cdn.usefathom.com/script.js" data-site="HIPVVMAQ" defer></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="ESBFKVKN" defer></script>
 </head>
 <body>
 
