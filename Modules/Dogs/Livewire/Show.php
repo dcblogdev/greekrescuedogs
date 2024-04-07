@@ -23,6 +23,8 @@ class Show extends Component
 
     public $latestPosts;
 
+    public $tags;
+
     public function mount($slug): void
     {
         $this->dog = DogModel::where('slug', $slug)->firstOrFail();
@@ -40,6 +42,8 @@ class Show extends Component
         $content = $this->dog->content;
         $content = Str::markdown($content);
         $this->content = Tags::get($content);
+
+        $this->tags = $this->dog->tags()->get()->pluck('name')->toArray();
     }
 
     public function render()

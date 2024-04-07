@@ -68,13 +68,12 @@ class EditDog extends Component
         $this->vaccinated = $this->dog->vaccinated;
         $this->microChipped = $this->dog->micro_chipped;
         $this->sprayed = $this->dog->sprayed;
-        $this->dob = $this->dog->dob ?? $this->dog->dob->format('d-m-Y');
+        $this->dob = $this->dog->dob;
         $this->exitingImage = $this->dog->image;
         $this->keyFeatures = $this->dog->key_features;
         $this->description = $this->dog->description;
         $this->content = $this->dog->content;
-        //dd($this->dog->tags);
-        //$this->traits = $this->dog->tags->pluck('name')->toArray();
+        $this->traits = $this->dog->tags()->get()->pluck('name')->toArray();
 
         $this->genders = [
             'Male' => 'Male',
@@ -107,7 +106,7 @@ class EditDog extends Component
             'slug' => Str::slug($this->slug),
             'sex' => $this->sex,
             'weight' => $this->weight,
-            'dob' => $this->dob ?? date('Y-m-d H:i:s', strtotime($this->dob)),
+            'dob' => $this->dob,
             'vaccinated' => $this->vaccinated,
             'micro_chipped' => $this->microChipped,
             'sprayed' => $this->sprayed,

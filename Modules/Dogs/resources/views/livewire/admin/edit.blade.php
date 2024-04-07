@@ -12,7 +12,7 @@
         </div>
    </div>
 
-    <x-form wire:submit.prevent="update">
+    <x-form wire:submit="update" wire:keydown.enter.prevent="">
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
             <x-form.input wire:model="title" label="Title" name="title" required />
@@ -20,7 +20,6 @@
             <x-form.select :data="$genders" wire:model="sex" label="Sex" name="sex" />
             <x-form.input wire:model="weight" label="Weight" name="weight" />
             <x-form.date wire:model="dob" label="Date of Birth" name="dob" />
-
             <div>
                 <x-form.checkbox wire:model="vaccinated" label="Vaccinated" name="vaccinated" />
                 <x-form.checkbox wire:model="microChipped" label="Micro chipped" name="microChipped" />

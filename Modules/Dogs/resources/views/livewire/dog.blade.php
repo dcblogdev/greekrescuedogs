@@ -105,6 +105,11 @@
 
             </div>
 
+            <div class="my-5">
+                @foreach($tags as $tag)
+                    {{ $tag }}
+                @endforeach
+            </div>
 
             <div>
                 <h2>Key Features</h2>
