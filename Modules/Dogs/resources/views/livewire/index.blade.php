@@ -3,7 +3,7 @@
 
     @if (request()->path() == '/')
         <div id="featured">
-            <div class="mx-auto max-w-2xl">
+            <div class="mx-auto max-w-2xl px-8 py-12 mb-12">
 
                 <div class="py-5 mx-auto block px-4 w-full">
                     <h1 class="mb-10 font-bold text-5xl text-black">
