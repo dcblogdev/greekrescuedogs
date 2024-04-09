@@ -4,7 +4,7 @@
 
             <div class="navbar-brand">
                 <a href="/">
-                    <img class="h-12" src="{{ url('images/logo.png') }}" alt="{{ config('app.name') }}">
+                    <img class="h-12" src="{{ url('logo.png') }}" alt="{{ config('app.name') }}">
                 </a>
             </div>
 
