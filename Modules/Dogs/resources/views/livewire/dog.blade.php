@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="mx-auto max-w-2xl">
+    <div class="container max-w-screen-lg pb-16 mx-auto">
 
         <div class="overflow-hidden mb-10 px-8 py-4 rounded-lg">
 
@@ -109,14 +109,17 @@
                 @endforeach
             </div>
 
-            <div>
-                {!! $keyFeatures !!}
-            </div>
+            <div class="mx-auto max-w-2xl">
 
+                <div>
+                    {!! $keyFeatures !!}
+                </div>
 
-            <div id="mainContent" class="prose lg:prose-xl">
-                <h2>About {{ $dog->title }}</h2>
-                {!! $content !!}
+                <div id="mainContent" class="prose lg:prose-xl">
+                    <h2>About {{ $dog->title }}</h2>
+                    {!! $content !!}
+                </div>
+
             </div>
 
         </div>
