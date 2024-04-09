@@ -35,7 +35,7 @@
             <div class="navbar-other w-full !flex !ml-auto">
                 <ul class="navbar-nav !flex-row !items-center !ml-auto">
                     <li class="nav-item hidden xl:block lg:block md:block">
-                        <a href="/donate" class="btn btn-sm btn-primary text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:border-[#3f78e0] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">Donate</a>
+{{--                        <a href="/donate" class="btn btn-sm btn-primary text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:border-[#3f78e0] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]">Donate</a>--}}
                     </li>
                     <li class="nav-item xl:hidden lg:hidden">
                         <button class="hamburger offcanvas-nav-btn"><span></span></button>
