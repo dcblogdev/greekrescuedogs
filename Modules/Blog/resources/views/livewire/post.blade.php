@@ -45,36 +45,16 @@
         </div>
     </div>
 
-    <div class="container max-w-screen-lg pb-16 mx-auto">
+    <article class="mx-auto max-w-2xl">
 
-        <div class="flex items-center mb-6">
+        @auth
+            <a href="{{ url("admin/blog/edit/$post->id") }}">Edit</a>
+        @endauth
 
-            <div class="ml-3">
-                <div class="flex text-sm leading-5 text-gray-500 dark:text-gray-200">
-                    <time datetime="{{ $post->created_at }}">{{ date('jS M Y h:i A', strtotime($post->created_at)) }}</time>
-                </div>
-            </div>
-
+        <div id="mainContent">
+            {!! $content !!}
         </div>
 
-        <article class="mx-auto">
-
-            @auth
-                <a href="{{ url("admin/blog/edit/$post->id") }}">Edit</a>
-            @endauth
-
-            <p>
-                @foreach($post->cats as $cat)
-                    <a href="{{ url('categories/'.$cat->slug) }}" class="bg-primary text-gray-200 text-sm p-2 rounded">{{ $cat->title }}</a>
-                @endforeach
-            </p>
-
-            <div id="mainContent">
-                {!! $content !!}
-            </div>
-
-        </article>
-
-    </div>
+    </article>
 
 </div>

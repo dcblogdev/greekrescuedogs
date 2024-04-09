@@ -48,7 +48,7 @@
         </div>
     </div>
 
-    <div class="container max-w-screen-lg pb-16 mx-auto">
+    <div class="mx-auto max-w-2xl">
 
         <div class="overflow-hidden mb-10 px-8 py-4 rounded-lg">
 
