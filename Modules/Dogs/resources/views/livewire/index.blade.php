@@ -10,9 +10,9 @@
                         {{ config('app.name') }}
                     </h1>
 
-                    <h2 class="my-5 text-2xl text-black font-bold">Meet 19 dogs in urgent need of a forever home.</h2>
+                    <h2 class="my-5 text-2xl text-black font-bold">Meet the dogs in urgent need of a forever home.</h2>
 
-                    <p class="my-5 text-lg">The closure of <span class="font-bold">Compassion for Greek paws</span>, one of the best animal <span class="bold">shelters in Greece</span>, is imminent. Leaving the future of their 19 beautiful remaining dogs <span class="bold">in great peril</span>.</p>
+                    <p class="my-5 text-lg">The closure of <span class="font-bold">Compassion for Greek paws</span>, one of the best animal <span class="bold">shelters in Greece</span>, is imminent. Leaving the future of their remaining dogs <span class="bold">in great peril</span>.</p>
 
                     <p class="my-5 text-lg">With nearby shelters already <span class="font-bold">stretched to the limit</span> their best <span class="font-bold">hope</span> is adoption or finding a place in an overseas shelter.</p>
 
