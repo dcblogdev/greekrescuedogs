@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', WelcomeController::class)->name('home');
-Route::get('contact', Contact::class)->name('contact');
+//Route::get('contact', Contact::class)->name('contact');
 
 Route::prefix(config('admintw.prefix'))->middleware(['auth', 'verified', 'activeUser', 'IpCheckMiddleware'])->group(function () {
 
