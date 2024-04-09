@@ -10,7 +10,7 @@ class Index extends Component
 {
     public function render(): View
     {
-        $dogs = Dog::latest()->paginate();
+        $dogs = Dog::latest()->paginate(50);
 
         return view('dogs::livewire.index', compact('dogs'))->layout('layouts.front');
     }
