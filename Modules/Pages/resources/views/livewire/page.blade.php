@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <div class="container max-w-screen-lg pb-16 mx-auto">
+    <div class="mx-auto max-w-2xl">
 
         <div class="prose lg:prose-xl">
             {!! $content !!}

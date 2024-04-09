@@ -24,7 +24,7 @@
                 <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="/">Meet the Dogs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog">Inspiring Stories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="/adoption-process">Adoption Process</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                     </ul>
