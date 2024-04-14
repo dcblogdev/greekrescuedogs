@@ -51,7 +51,7 @@
             <a href="{{ url("admin/blog/edit/$post->id") }}">Edit</a>
         @endauth
 
-        <div id="mainContent">
+        <div id="mainContent" class="p-5">
             {!! $content !!}
         </div>
 
